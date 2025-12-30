@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body class="text-gray-700 min-h-screen flex flex-col">
+
+    <header id="inicio" class="relative hero-header w-full h-[60vh] md:h-[70vh] overflow-hidden">
+        <nav id="navbar" class="fixed top-0 left-0 w-full p-4 z-20 bg-white transition-all duration-300 shadow-sm">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex-shrink-0 w-36">
+                    <a href="#inicio">
+                        <div class="h-10 w-full flex items-center justify-center"><img src="/assets/logobios.jpeg" alt="Logo BIOS"></div>
+                    </a>
+                </div>
+
+                <div class="hidden lg:flex justify-center items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors nav-link-active">Sobre</a>
+                    <a href="/docentes.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors">Docentes</a>
+                    <a href="/equipamentos.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors">Equipamentos</a>
+                    <a href="/linhasPesquisa.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors">Linhas de Pesquisa</a>
+                    <a href="/Usuarios.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors">Usuários</a>
+                </div>
+
+                <div class="w-36 flex justify-end">
+                    <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="w-full h-full grid place-items-center">
+            <div class="text-center z-10">
+                <h1 id="main-title" class="text-5xl md:text-7xl font-bold text-white">BIOS</h1>
+                <p class="mt-4 text-xl md:text-2xl text-white font-semibold">Sobre</p>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <section id="sobre" class="py-20 px-4 bg-white">
+            <div class="max-w-5xl mx-auto fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Sobre o Laboratório</h2>
+                <div class="space-y-6 text-lg text-gray-600 leading-relaxed text-justify">
+                    <p>
+                        O BIOS é um laboratório multiusuário e interdisciplinar que reúne pesquisadores dos Programas de Pós-Graduação em Biotecnologia da Unimontes, Alimentos e Saúde e Produção Vegetal do ICA/UFMG.
+                    </p>
+                    <p>
+                        Voltado para Pesquisa & Desenvolvimento e prestação de serviços, o BIOS atua em processos bioquímicos e microbiologia aplicada, incluindo a bioprodução de enzimas, ácidos orgânicos, etanol, hidrogênio e outros compostos não gasosos em cultivos submersos. Além disso, dedica-se à produção, purificação e caracterização de produtos e insumos farmacêuticos e biotecnológicos.
+                    </p>
+                    <p>
+                        O laboratório consolida-se como uma plataforma para o desenvolvimento de estudos e experimentos, especialmente na área da Biotecnologia, promovendo a interação entre diferentes programas de pós-graduação. Trata-se de um ambiente que integra diversas disciplinas — como engenharia química, engenharia de produção, ciências farmacêuticas, bioquímica, microbiologia e sistemas de informação para controle de processos — favorecendo a inovação e o avanço no desenvolvimento de bioprocessos.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="bg-gray-200 text-gray-700 py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="footer-text">Laboratório de Desenvolvimento de BioProcessos</p>
+            <p>&copy; 2024 Laboratório Moderno. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Rua da Saúde, 123 - Centro | (XX) XXXX-XXXX</p>
+        </div>
+    </footer>
+
+    <div id="menu-overlay" class="hidden fixed inset-0 bg-black/50 z-30"></div>
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden">
+        <div class="flex justify-end p-4">
+            <button id="close-menu-button" class="text-gray-600 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <a href="index.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md nav-link-active">Sobre</a>
+        <a href="/docentes.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md">Docentes</a>
+        <a href="/equipamentos.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md">Equipamentos</a>
+        <a href="/linhasPesquisa.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md">Linhas de Pesquisa</a>
+        <a href="/Usuarios.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md">Usuários</a>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

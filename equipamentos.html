@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-700 min-h-screen flex flex-col">
+
+    <header id="inicio" class="relative hero-header w-full h-[60vh] md:h-[70vh] overflow-hidden">
+        <nav id="navbar" class="fixed top-0 left-0 w-full p-4 z-20 bg-white transition-all duration-300">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex-shrink-0 w-36">
+                    <a href="#inicio">
+                        <div class="h-10 w-full flex items-center justify-center overflow-hidden">
+                            <img src="/assets/logobios.jpeg" alt="Logo BIOS">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden lg:flex justify-center items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors">Sobre</a>
+                    <a href="/docentes.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors">Docentes</a>
+                    <a href="/equipamentos.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors nav-link-active">Equipamentos</a>
+                    <a href="/linhasPesquisa.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors">Linhas de Pesquisa</a>
+                    <a href="/Usuarios.html" class="nav-link text-gray-600 hover:text-gray-500 transition-colors">Usuários</a>
+                </div>
+
+                <div class="w-36 flex justify-end">
+                    <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="w-full h-full grid place-items-center">
+            <div class="text-center z-10">
+                <h1 id="main-title" class="text-5xl md:text-7xl font-bold text-white">BIOS</h1>
+                <p class="mt-4 text-xl md:text-2xl text-white font-semibold">Equipamentos</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="equipamentos" class="py-20 px-4 bg-white">
+            <div class="max-w-5xl mx-auto fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Infraestrutura e equipamentos</h2>
+
+                <!-- Seção de Infraestrutura -->
+                <div class="mb-16">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-700 mb-4">Infraestrutura</h3>
+                    <div class="space-y-4 text-lg text-gray-600 leading-relaxed text-justify">
+                        <p>O Laboratório Multiusuário BIOS conta com uma área de 82 m², localizado no Prédio da Tecnologia, 1º andar, no Campus da Universidade Estadual de Montes Claros.</p>
+                        <p>Sua estrutura é composta por dois ambientes principais:</p>
+                        <ul class="list-disc list-inside ml-4">
+                            <li>Cultivo microbiano e esterilização.</li>
+                            <li>Preparo de materiais, análises e purificação de proteínas.</li>
+                        </ul>
+                        <p>Além disso, o laboratório dispõe de uma casa de máquinas, onde estão alocados o compressor e os cilindros de gases (oxigênio, nitrogênio, gás carbônico e GLP), além de um sistema de resfriamento de água, garantindo suporte técnico adequado para os processos de pesquisa e desenvolvimento.</p>
+                    </div>
+                </div>
+                
+                <!-- Foto da Infraestrutura -->
+                <div class="my-12 h-80 bg-gray-200 rounded-lg overflow-hidden">
+                     <img src="/assets/capa.jpg" alt="Foto da infraestrutura do laboratório" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Seção de Equipamentos -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-700 mb-8">Equipamentos</h3>
+                    <div class="space-y-16">
+                        <!-- Biorreator -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Biorreator</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Sistema de Cultivo Microbiano Bioengineering RALF-Quartet é composto por quatro biorreatores CSTR (Continuous Stirred Tank Reactor) de bancada, integrados a estações de trabalho modernas que permitem o controle preciso de parâmetros como pH, temperatura, oxigenação e agitação. O equipamento oferece flexibilidade para estudos comparativos e paralelos em diferentes condições experimentais, garantindo alta reprodutibilidade e eficiência nos processos de cultivo microbiano.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="/assets/bioreator.jpg" alt="Imagem do Biorreator" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Spray Dryer -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                 <h4 class="text-xl font-semibold text-gray-700 mb-2">Spray Dryer</h4>
+                                 <p class="text-lg text-gray-600 leading-relaxed text-justify">O Spray Dryer de bancada, marca BUCHI, modelo Mini Spray Dryer B-290 é um equipamento compacto e versátil, amplamente utilizado em pesquisas e desenvolvimento de produtos para a secagem de soluções, suspensões e emulsões em partículas sólidas na forma de pó. Com tecnologia de atomização eficiente e controle preciso de parâmetros de processo, permite obter pós com elevada reprodutibilidade, pureza e estabilidade.</p>
+                            </div>
+                             <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="w-36 h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="" alt="Imagem do Spray Dryer" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Espectrofotômetro NIR -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Espectrofotômetro NIR</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Espectrofotômetro NIR (Vermelho próximo), marca BUCHI, modelo NIRFlex-500 é um equipamento de alta performance voltado para análises rápidas, não destrutivas e sem preparo prévio de amostras sólidas, líquidas ou pastosas. Operando no espectro do infravermelho próximo, permite identificar, quantificar e qualificar componentes com elevada precisão e reprodutibilidade. Graças ao seu design modular, pode ser adaptado a diferentes tipos de aplicação, atendendo às necessidades específicas de pesquisa, desenvolvimento e controle de qualidade. Auxilia em estudos de formulação, monitoramento de processos, caracterização de matérias-primas e avaliação da qualidade final de produtos.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Espectrofotômetro" alt="Imagem do Espectrofotômetro NIR" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ultracentrífuga de chão -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Ultracentrífuga de chão</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">A Ultracentrífugas de chão, marca Beckman, modelo Avanti JXN30 oferece desempenho avançado para separação de partículas em altas velocidades, com capacidade de atingir até 30.000 rpm. Projetada para aplicações que exigem alta precisão e reprodutibilidade, permite a separação eficiente de componentes celulares, proteínas, ácidos nucleicos e nanopartículas. Contam com tecnologia de refrigeração eficiente, interface intuitiva e conectividade em rede, garantindo segurança, versatilidade e controle total do processo.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Ultracentrífuga" alt="Imagem da Ultracentrífuga de chão" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Homogeneizador de alta pressão -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Homogeneizador de alta pressão</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Homogeneizador de alta pressão de bancada, marca Panda 2000, é um equipamento compacto e de alto desempenho, desenvolvido para processar pequenas e médias amostras em escala laboratorial. Utiliza pressões elevadas para promover a redução do tamanho de partículas e gotículas, garantindo emulsões e suspensões mais estáveis e homogêneas, como também promoção da lise celular levando extração de proteínas e DNA/RNA em células bacterianas, fúngicas, leveduras e células animais. É ideal para pesquisas, desenvolvimento de produtos e estudos de escalonamento, oferecendo resultados reprodutíveis com máxima eficiência e confiabilidade.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                     <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Homogeneizador" alt="Imagem do Homogeneizador de alta pressão" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Reômetro -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Reômetro</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Reômetro, marca Waters, modelo HR-20 é um equipamento de alta precisão projetado para caracterizar as propriedades reológicas de materiais sob diferentes condições de fluxo e deformação. Permite a realização de ensaios em regime rotacional e oscilatório, possibilitando avaliar viscosidade, elasticidade e comportamento viscoelástico de líquidos, suspensões, géis e semissólidos. Com controle rigoroso de temperatura e ampla faixa de aplicação.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Reômetro" alt="Imagem do Reômetro" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Incubadora Orbital -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Incubadora Orbital</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">A Incubadora orbital shaker, marca LabWit, modelo ZWYR-D240 é um equipamento versátil que combina agitação orbital controlada e incubação precisa de temperatura, ideal para o cultivo de microrganismos, células e tecidos. Projetada para oferecer uniformidade térmica e estabilidade na velocidade de agitação, permite condições reprodutíveis para crescimento celular e ensaios bioquímicos.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Incubadora+Orbital" alt="Imagem da Incubadora Orbital" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Analisador de Atividade de Água -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Analisador de Atividade de Água</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Analisador de atividade de água, marca AQUALAB, modelo AQUALAB 4TE é um equipamento de referência para a determinação rápida e precisa da atividade de água em diferentes tipos de amostras, como alimentos, fármacos e cosméticos. Utilizando tecnologia de ponto de orvalho e sensores de alta sensibilidade, fornece resultados confiáveis em poucos minutos, sem necessidade de preparo complexo da amostra. Auxilia na garantia de estabilidade, segurança microbiológica e vida útil dos produtos.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Analisador+de+Água" alt="Imagem do Analisador de Atividade de Água" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Texturômetro -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Texturômetro</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Texturômetro, marca STABLE é um equipamento desenvolvido para a análise mecânica e sensorial de produtos, permitindo avaliar parâmetros como dureza, firmeza, elasticidade, adesividade e coesividade. Com alta precisão e versatilidade, pode ser configurado com diferentes sondas e acessórios, adaptando-se a diversas matrizes, como alimentos, fármacos, cosméticos e materiais poliméricos, fornece dados objetivos e reprodutíveis que auxiliam na caracterização e padronização de produtos.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Texturômetro" alt="Imagem do Texturômetro" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Densímetro -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Densímetro</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Densímetro, marca KEN, modelo DA-940 é um equipamento de alta precisão utilizado para a medição da densidade de líquidos de forma rápida e confiável. Com tecnologia avançada e interface intuitiva, permite resultados reprodutíveis em diferentes tipos de amostras. Seu design robusto e de fácil operação garante eficiência em pesquisas que exigem análises rigorosas de densidade.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Densímetro" alt="Imagem do Densímetro" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Refratômetro -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Refratômetro</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Refratômetro, marca Anton Paar, modelo Abbemat 3200 é um equipamento de alta precisão projetado para medições rápidas e confiáveis do índice de refração e da concentração de soluções em pesquisas laboratoriais e desenvolvimento de produtos. Sua sensibilidade elevada e calibração simplificada permitem monitorar alterações em formulações, caracterizar puridade de compostos e acompanhar processos de síntese química ou preparação de soluções padrão.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Refratômetro" alt="Imagem do Refratômetro" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Calorímetro -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Calorímetro</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Calorímetro, marca Waters, modelo ITC é um equipamento de alta sensibilidade projetado para medir interações moleculares e reações bioquímicas através da detecção de pequenas variações de calor. Permite determinar parâmetros termodinâmicos como entalpia, afinidade e estequiometria de ligações, sendo amplamente utilizado em pesquisas farmacêuticas, biotecnológicas e bioquímicas. Com precisão e reprodutibilidade elevadas, é uma ferramenta essencial para estudos de interação proteína-ligante, caracterização de biomoléculas e desenvolvimento de novos fármacos.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Calorímetro" alt="Imagem do Calorímetro" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sistema de Extração com Fluído Supercrítico (SFE) -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Sistema de Extração com Fluído Supercrítico (SFE)</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Sistema de extração com Fluído Supercrítico, marca SFE, modelo Speed SFE-2 é uma ferramenta de última geração voltada para a obtenção de extratos de alta qualidade a partir de matrizes vegetais, alimentícias e farmacêuticas. Utilizando dióxido de carbono em estado supercrítico, o equipamento permite explorar seletivamente diferentes classes de compostos bioativos, ajustando parâmetros de pressão e temperatura com precisão. Essa tecnologia limpa e sustentável dispensa o uso de solventes orgânicos agressivos, preservando a inteireza química dos extratos e garantindo maior pureza e segurança. No âmbito da pesquisa e desenvolvimento, é amplamente empregado em estudos de novos fármacos, nutracêuticos, aromas, óleos essenciais e ingredientes funcionais, além de ser uma importante ferramenta para o escalonamento de processos inovadores e sustentáveis.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Sistema+SFE" alt="Imagem do Sistema de Extração com Fluído Supercrítico" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sistema de purificação de água Milli-Q -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Sistema de purificação de água Milli-Q</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Sistema de Purificação de Água Milli-Q é um equipamento de referência para a obtenção de água ultrapura de altíssima qualidade, adequada para aplicações laboratoriais. Utilizando uma combinação de filtração, osmose reversa e troca iônica, garante remoção de partículas, íons, matéria orgânica e contaminantes microbiológicos. Com operação prática e confiável, oferece água de pureza consistente, atendendo aos mais rigorosos padrões de experimentos e análises laboratoriais.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Sistema+Milli-Q" alt="Imagem do Sistema de purificação de água Milli-Q" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Analisador Bioquímico -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Analisador Bioquímico</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">O Analisador Bioquímico, Xylen, modelo YSI 2900 é um equipamento versátil e de alta precisão, desenvolvido para medições rápidas e confiáveis de parâmetros bioquímicos em líquidos biológicos, meios de cultura e diversas amostras laboratoriais. Utilizando sensores enzimáticos específicos, permite a quantificação direta de metabólitos como glicose, lactato, glutamina, glutamato, etanol, ureia, entre outros, sem necessidade de preparo complexo. Na pesquisa e desenvolvimento, é uma ferramenta essencial para o monitoramento em tempo real de cultivos celulares e microbianos, otimização de processos biotecnológicos e estudos metabólicos.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Analisador+Bioquímico" alt="Imagem do Analisador Bioquímico" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cabine de Biossegurança -->
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-2/3">
+                                <h4 class="text-xl font-semibold text-gray-700 mb-2">Cabine de Biossegurança</h4>
+                                <p class="text-lg text-gray-600 leading-relaxed text-justify">A Cabine de Biossegurança, marca Haier, HR1200-IIA2-D é um equipamento essencial para atividades laboratoriais que envolvem microrganismos, culturas celulares e materiais potencialmente contaminantes, garantindo proteção simultânea ao operador, às amostras e ao ambiente. Equipada com sistema de filtragem HEPA de alta eficiência e fluxo de ar controlado, assegura um ambiente de trabalho seguro e livre de contaminações cruzadas. No contexto de pesquisa e desenvolvimento, é amplamente utilizada em estudos microbiológicos, biotecnológicos e farmacêuticos, possibilitando a manipulação de agentes biológicos com rigoroso padrão de biossegurança.</p>
+                            </div>
+                            <div class="md:w-1/3 w-full mt-4 md:mt-0 md:ml-8">
+                                <div class="h-48 bg-gray-200 rounded-lg overflow-hidden">
+                                    <img src="https://placehold.co/400x300/e2e8f0/64748b?text=Cabine+de+Biossegurança" alt="Imagem da Cabine de Biossegurança" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-200 text-gray-700 py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="footer-text">Laboratório de Desenvolvimento de BioProcessos</p>
+            <p>&copy; 2024 Laboratório Moderno. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Rua da Saúde, 123 - Centro | (XX) XXXX-XXXX</p>
+        </div>
+    </footer>
+
+    <div id="menu-overlay" class="hidden fixed inset-0 bg-black/50 z-30"></div>
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden">
+        <div class="flex justify-end p-4">
+            <button id="close-menu-button" class="text-gray-600 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <a href="index.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md">Sobre</a>
+        <a href="/docentes.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md">Docentes</a>
+        <a href="/equipamentos.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md nav-link-active">Equipamentos</a>
+        <a href="/linhasPesquisa.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md">Linhas de Pesquisa</a>
+        <a href="/Usuarios.html" class="nav-link block py-2 px-4 text-sm hover:bg-gray-100 rounded-md">Usuários</a>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

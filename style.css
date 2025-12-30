@@ -1,0 +1,128 @@
+/* Estilos personalizados para complementar o Tailwind CSS */
+html {
+    background-color: #F9FAFB; /* Garante que o fundo ocupe toda a tela no zoom out */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Garantir que os títulos também usem a fonte Lato */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Animação de fade-in para elementos */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+/* Estilo para a navegação ativa */
+.nav-link-active {
+    color: #6B7280; /* Cinza médio */
+    position: relative;
+    font-weight: 600;
+}
+
+    .nav-link-active::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #9CA3AF; /* Cinza claro */
+    }
+
+/* Estilo do link ativo para mobile (dentro do menu lateral) */
+#mobile-menu .nav-link-active {
+    color: #374151; /* Cinza mais escuro */
+}
+
+    #mobile-menu .nav-link-active::after {
+        display: none;
+    }
+
+/* Estilos para o menu lateral */
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    z-index: 50;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+}
+
+    #mobile-menu.active {
+        transform: translateX(0);
+    }
+
+#menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+    #menu-overlay.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+/* Impede o scroll do corpo da página quando o menu está aberto */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Ajuste da logo no navbar */
+#navbar img {
+    max-height: 2.5rem; /* corresponde a h-10 do Tailwind (40px) */
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Hero header com imagem de fundo */
+.hero-header {
+    background-image: url('assets/header.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Rodapé */
+footer p {
+    display: none;
+}
+
+    footer p.footer-text {
+        display: block;
+    }
+
+/* =========================
+   CORREÇÃO MOBILE (CRÍTICA)
+   ========================= */
+@media (max-width: 768px) {
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
